@@ -37,9 +37,15 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
+        align-items: center;
+        flex-wrap: wrap;
 
         &-box {
             height: 1220px;
+        }
+
+        &__cont {
+            width: 343px;
         }
 
         &__naming {

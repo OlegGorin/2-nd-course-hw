@@ -41,6 +41,13 @@ select {
         font-weight: 400;
         line-height: normal;
         justify-content: center;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #EB443F;
+            transform: scale(1.05);
+            box-shadow: 0 0 5px;
+        }
     }
 }
 
@@ -69,6 +76,7 @@ select {
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
 
+
     &-box {
         height: 556px;
         background-color: #000915;
@@ -84,6 +92,12 @@ select {
     &__item {
         border-radius: 16px;
         position: absolute;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 5px;
+        }
     }
 
     &__naming {
@@ -95,6 +109,12 @@ select {
         font-style: normal;
         font-weight: 600;
         line-height: 32px;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+            // box-shadow: 0 0 5px;
+        }
     }
 }
 
