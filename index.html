@@ -42,9 +42,65 @@
 
     </div>
 
-    <!-- <script src="hw-02.js"></script>
-    <script src="hw-03.js"></script> -->
+    <div class="seasons center">
+        <div class="seasons__box">
+            <h2 class="seasons__heading">Времена года!</h2>
+            <div class="seasons__intro-box">
+                <h3 class="seasons__intro">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к
+                    какому
+                    времени
+                    года он относится</h3>
+            </div>
+            <div class="seasons__play">
+                <button type="submit" class="seasons__game-btn" onclick="season()">Играть!</button>
+            </div>
+        </div>
+        <div class="seasons__logo">
+            <a href="#"><img class="logo__game" src="./img/video_game_logo.svg" alt="logo"></a>
+        </div>
+    </div>
+
+    <script>
+        function season() {
+            let monthNumber = prompt('Введите номер месяца');
+            let isNumb = !isNaN(Number(monthNumber));
+
+            if (isNumb === true) {
+
+                if (monthNumber == 1 || monthNumber == 2 || monthNumber == 12) {
+                    let result = 'Зима';
+                    console.log(result);
+                    // return result;
+                }
+                else if (monthNumber >= 3 && monthNumber <= 5) {
+                    let result = 'Весна';
+                    console.log(result);
+                    // return result;
+                }
+                else if (monthNumber >= 6 && monthNumber <= 8) {
+                    let result = 'Лето';
+                    console.log(result);
+                    // return result;
+                }
+                else if (monthNumber >= 9 && monthNumber <= 11) {
+                    let result = 'Осень';
+                    console.log(result);
+                    // return result;
+                }
+                else if (monthNumber < 1 || monthNumber > 12) {
+                    let result = 'Вы ввели неверный номер месяца';
+                    console.log(result);
+                    // return result;
+                }
+            }
+            else {
+                let result = 'Введенный параметр не является числом';
+                console.log(result);
+                // return result;
+            }
+        }
+    </script>
 
 </body>
-
+    
 </html>

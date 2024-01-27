@@ -30,7 +30,6 @@ select {
   background-size: cover;
 }
 .top__game-btn {
-  margin-top: 44px;
   width: 234px;
   height: 48px;
   border-radius: 30px;
@@ -60,11 +59,12 @@ select {
 }
 
 .intro {
+  margin-bottom: 44px;
   width: 480px;
   color: #FFF;
   font-size: 18px;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 32px;
 }
 
@@ -108,6 +108,53 @@ select {
   transform: scale(1.05);
 }
 
+.seasons {
+  height: 800px;
+  background-color: #000915;
+  display: flex;
+  flex-direction: row;
+  gap: 135px;
+  align-items: center;
+}
+.seasons__box {
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.seasons__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: normal;
+  color: #FFF;
+}
+.seasons__intro {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.seasons__game-btn {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.seasons__game-btn:hover {
+  background-color: #EB443F;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -121,7 +168,6 @@ select {
     align-items: center;
   }
   .top__game-btn {
-    margin-top: 32px;
     width: 234px;
     align-content: center;
   }
@@ -158,5 +204,36 @@ select {
   .game__item {
     width: 343px;
     height: 300px;
+  }
+  .seasons {
+    height: 654px;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+  }
+  .seasons__heading {
+    font-size: 32px;
+  }
+  .seasons__intro {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 22px;
+    text-align: center;
+    padding: 0 2px 0 2px;
+  }
+  .seasons__intro-box {
+    width: 343px;
+  }
+  .seasons__box {
+    padding-top: 51px;
+    width: 343px;
+    align-items: center;
+  }
+  .seasons__game-btn {
+    width: 234px;
+    align-content: center;
+  }
+  .logo__game {
+    width: 343px;
   }
 }/*# sourceMappingURL=style.css.map */

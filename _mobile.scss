@@ -12,7 +12,7 @@
         align-items: center;
 
         &__game-btn {
-            margin-top: 32px;
+            // margin-top: 32px;
             width: 234px;
             align-content: center;
         }
@@ -56,5 +56,43 @@
             width: 343px;
             height: 300px;
         }
+    }
+
+    .seasons {
+        height: 654px;
+        flex-direction: column;
+        gap: 64px;
+        align-items: center;
+
+        &__heading {
+            font-size: 32px;
+        }
+
+        &__intro {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 22px;
+            text-align: center;
+            padding: 0 2px 0 2px;
+
+            &-box {
+                width: 343px;
+            }
+        }
+
+        &__box {
+            padding-top: 51px;
+            width: 343px;
+            align-items: center;
+        }
+
+        &__game-btn {
+            width: 234px;
+            align-content: center;
+        }
+    }
+
+    .logo__game {
+        width: 343px;
     }
 }
