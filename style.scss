@@ -30,7 +30,6 @@ select {
     background-size: cover;
 
     &__game-btn {
-        margin-top: 44px;
         width: 234px;
         height: 48px;
         border-radius: 30px;
@@ -62,11 +61,12 @@ select {
 }
 
 .intro {
+    margin-bottom: 44px;
     width: 480px;
     color: #FFF;
     font-size: 18px;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 32px;
 }
 
@@ -114,6 +114,60 @@ select {
         &:hover {
             transform: scale(1.05);
             // box-shadow: 0 0 5px;
+        }
+    }
+}
+
+.seasons {
+    height: 800px;
+    background-color: #000915;
+    display: flex;
+    flex-direction: row;
+    gap: 135px;
+    align-items: center;
+
+    &__box {
+        width: 584px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: normal;
+        // padding-top: 282px;
+        color: #FFF;
+    }
+
+    &__intro {
+        // width: 480px;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
+    &__game-btn {
+        width: 234px;
+        height: 48px;
+        border-radius: 30px;
+        background: #9C0332;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-content: center;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #EB443F;
+            transform: scale(1.05);
+            box-shadow: 0 0 5px;
         }
     }
 }
