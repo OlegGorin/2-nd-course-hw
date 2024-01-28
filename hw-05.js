@@ -66,11 +66,11 @@ console.log(yourAge());
 
 
 // Задание 5
-console.log(mult());
+console.log(mult(2, 6));
 
-function mult() {
-    let numb1 = prompt('Введите первое число');
-    let numb2 = prompt('Введите второе число');
+function mult(numb1, numb2) {
+    // let numb1 = prompt('Введите первое число');
+    // let numb2 = prompt('Введите второе число');
 
     let isNumb1 = !isNaN(Number(numb1));
     let isNumb2 = !isNaN(Number(numb2));
