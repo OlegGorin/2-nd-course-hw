@@ -54,7 +54,7 @@
                     года он относится</h3>
             </div>
             <div class="seasons__play">
-                <button type="submit" class="seasons__game-btn" onclick="season()">Играть!</button>
+                <button type="submit" class="seasons__game-btn" onclick="console.log(season())">Играть!</button>
             </div>
         </div>
         <div class="seasons__logo">
@@ -71,34 +71,34 @@
 
                 if (monthNumber == 1 || monthNumber == 2 || monthNumber == 12) {
                     let result = 'Зима';
-                    console.log(result);
-                    // return result;
+                    // console.log(result);
+                    return result;
                 }
                 else if (monthNumber >= 3 && monthNumber <= 5) {
                     let result = 'Весна';
-                    console.log(result);
-                    // return result;
+                    // console.log(result);
+                    return result;
                 }
                 else if (monthNumber >= 6 && monthNumber <= 8) {
                     let result = 'Лето';
-                    console.log(result);
-                    // return result;
+                    // console.log(result);
+                    return result;
                 }
                 else if (monthNumber >= 9 && monthNumber <= 11) {
                     let result = 'Осень';
-                    console.log(result);
-                    // return result;
+                    // console.log(result);
+                    return result;
                 }
                 else if (monthNumber < 1 || monthNumber > 12) {
                     let result = 'Вы ввели неверный номер месяца';
-                    console.log(result);
-                    // return result;
+                    // console.log(result);
+                    return result;
                 }
             }
             else {
                 let result = 'Введенный параметр не является числом';
-                console.log(result);
-                // return result;
+                // console.log(result);
+                return result;
             }
         }
     </script>
