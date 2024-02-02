@@ -33,7 +33,7 @@ for (let i = 0; i <= 2; i++) {
    for (let j = 0; j <= 2; j++) {
       arr_1.push(1);
       if (j == 2) {
-	  arr_3.push(arr_1);
+         arr_3.push(arr_1);
       }
    }
 }
@@ -77,31 +77,31 @@ console.log(task_8End);
 
 
 // Задание 9
-let task_9 = [[1, 2, 3,],[4, 5, 6]];
+let task_9 = [[1, 2, 3,], [4, 5, 6]];
 let task_9Str = task_9.join();
 let task_9End = task_9Str.split(',');
 let task_9Num = [];
 for (let i = 0; i < task_9End.length; i++) {
-    task_9Num.push(Number(task_9End[i]));
+   task_9Num.push(Number(task_9End[i]));
 }
 console.log(task_9Num);
 
 
 // Задание 10
 const task_10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (let i = 0; i < task_10.length-1; i++) {
-    console.log(task_10[i]+task_10[i+1]);
+for (let i = 0; i < task_10.length - 1; i++) {
+   console.log(task_10[i] + task_10[i + 1]);
 }
 
 
 // Задание 11
-const arrFirst = [2, 5, 3, 6, 4, 7, 1, 8, 9, 10];
+const arrFirst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let arrSquare = square(arrFirst);
 console.log(arrSquare);
 
 function square(arr) {
-    const result = arr.map(el => el ** 2);
-    return result;
+   const result = arr.map(el => el ** 2);
+   return result;
 }
 
 
@@ -109,21 +109,50 @@ function square(arr) {
 getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']);
 
 function getLengthWords(array) {
-    let element = 0;
-    let result = [];
-    for (let i = 0; i < array.length; i++) {
-        element = array[i].length;
-        console.log(element);
-        result.push(element);
-    }
-    console.log(result);
+   let element = 0;
+   let result = [];
+   for (let i = 0; i < array.length; i++) {
+      element = array[i].length;
+      console.log(element);
+      result.push(element);
+   }
+   console.log(result);
 }
 
 // Задание 13
 function filterPositive(array) {
-    const result = array.filter(el => el < 0);
-    console.log(result);
+   const result = array.filter(el => el < 0);
+   console.log(result);
 }
-  
-filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
-filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
+
+filterPositive([-1, 0, 5, -10, 56]);
+filterPositive([-25, 25, 0, -1000, -2]);
+
+
+// Задание 14
+const min = 0;
+const max = 10;
+const count = 10;
+let randomArr = [];
+for (let i = 0; i < count; i++) {
+   let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+   randomArr.push(randomNum);
+}
+console.log(randomArr);
+const evenArr = randomArr.filter(el => el % 2 === 0);
+console.log(evenArr);
+
+
+
+// Задание 15
+const minRand = 1;
+const maxRand = 10;
+const countRand = 6;
+let randArr = [];
+for (let i = 0; i < countRand; i++) {
+   let randNum = Math.floor(Math.random() * (maxRand - minRand + 1)) + minRand;
+   randArr.push(randNum);
+}
+console.log(randArr);
+const average = randArr.reduce((a, b) => a + b) / countRand;
+console.log(average);
