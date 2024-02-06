@@ -54,7 +54,7 @@
                     года он относится</h3>
             </div>
             <div class="seasons__play">
-                <button type="submit" class="seasons__game-btn" onclick="console.log(season())">Играть!</button>
+                <button type="submit" class="seasons__game-btn" onclick="alert(season())">Играть!</button>
             </div>
         </div>
         <div class="seasons__logo">
@@ -62,7 +62,9 @@
         </div>
     </div>
 
-    <script>
+    <script src="game-01.js"></script>
+
+    <!-- <script>
         function season() {
             let monthNumber = prompt('Введите номер месяца');
             let isNumb = !isNaN(Number(monthNumber));
@@ -70,38 +72,26 @@
             if (isNumb === true) {
 
                 if (monthNumber == 1 || monthNumber == 2 || monthNumber == 12) {
-                    let result = 'Зима';
-                    // console.log(result);
-                    return result;
+                    return 'Зима';
                 }
                 else if (monthNumber >= 3 && monthNumber <= 5) {
-                    let result = 'Весна';
-                    // console.log(result);
-                    return result;
+                    return 'Весна';
                 }
                 else if (monthNumber >= 6 && monthNumber <= 8) {
-                    let result = 'Лето';
-                    // console.log(result);
-                    return result;
+                    return 'Лето';
                 }
                 else if (monthNumber >= 9 && monthNumber <= 11) {
-                    let result = 'Осень';
-                    // console.log(result);
-                    return result;
+                    return 'Осень';
                 }
                 else if (monthNumber < 1 || monthNumber > 12) {
-                    let result = 'Вы ввели неверный номер месяца';
-                    // console.log(result);
-                    return result;
+                    return 'Вы ввели неверный номер месяца';
                 }
             }
             else {
-                let result = 'Введенный параметр не является числом';
-                // console.log(result);
-                return result;
+                return 'Введенный параметр не является числом';
             }
         }
-    </script>
+    </script> -->
 
 </body>
     
