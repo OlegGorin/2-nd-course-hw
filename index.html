@@ -7,19 +7,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Главная страница</title>
 </head>
 
 <body>
-    
+
     <div class="top center">
-        <h1 class="heading">Добро пожаловать <br>на мой сайт !</h1>
-        <h3 class="intro">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и
+        <h1 class="top__heading">Добро пожаловать <br>на мой сайт !</h1>
+        <h3 class="top__intro">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и
             <b>приступай</b>
         </h3>
-        <div class="button__game">
-            <button type="submit" class="top__game-btn">Поехали!</button>
+        <div class="top__play">
+            <button type="submit" class="top__play-btn">Поехали!</button>
         </div>
     </div>
 
@@ -54,7 +54,7 @@
                     года он относится</h3>
             </div>
             <div class="seasons__play">
-                <button type="submit" class="seasons__game-btn" onclick="console.log(season())">Играть!</button>
+                <button type="submit" class="seasons__game-btn" onclick="alert(season())">Играть!</button>
             </div>
         </div>
         <div class="seasons__logo">
@@ -62,7 +62,44 @@
         </div>
     </div>
 
-    <script>
+    <div class="remember center">
+        <div class="remember__logo">
+            <a href="#"><img class="logo__game" src="./img/undraw_gaming_re_cma2.svg" alt="logo"></a>
+        </div>
+        <div class="remember__box">
+            <h2 class="remember__heading">Запомни слова</h2>
+            <div class="remember__intro-box">
+                <h3 class="remember__intro">При нажатии на кнопку играть, вы увидите несколько слов,
+                    которые вам необходимо запомнить.</h3>
+            </div>
+            <div class="remeber__play">
+                <button type="submit" class="remember__play-btn" onclick="alert(remember())">Играть!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="riddle center">
+        <div class="riddle__box">
+            <h2 class="riddle__heading">Игра в загадки</h2>
+            <h3 class="riddle__intro">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не
+                правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</b>
+            </h3>
+            <div class="riddle__play">
+                <button type="submit" class="riddle__play-btn" onclick="">Играть!</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer center">
+            <h4 class="footer__copyright">Все права защищены</h4>
+        </div>
+    </footer>
+
+
+    <script src="./JS/game-01.js"></script>
+
+    <!-- <script>
         function season() {
             let monthNumber = prompt('Введите номер месяца');
             let isNumb = !isNaN(Number(monthNumber));
@@ -70,39 +107,27 @@
             if (isNumb === true) {
 
                 if (monthNumber == 1 || monthNumber == 2 || monthNumber == 12) {
-                    let result = 'Зима';
-                    // console.log(result);
-                    return result;
+                    return 'Зима';
                 }
                 else if (monthNumber >= 3 && monthNumber <= 5) {
-                    let result = 'Весна';
-                    // console.log(result);
-                    return result;
+                    return 'Весна';
                 }
                 else if (monthNumber >= 6 && monthNumber <= 8) {
-                    let result = 'Лето';
-                    // console.log(result);
-                    return result;
+                    return 'Лето';
                 }
                 else if (monthNumber >= 9 && monthNumber <= 11) {
-                    let result = 'Осень';
-                    // console.log(result);
-                    return result;
+                    return 'Осень';
                 }
                 else if (monthNumber < 1 || monthNumber > 12) {
-                    let result = 'Вы ввели неверный номер месяца';
-                    // console.log(result);
-                    return result;
+                    return 'Вы ввели неверный номер месяца';
                 }
             }
             else {
-                let result = 'Введенный параметр не является числом';
-                // console.log(result);
-                return result;
+                return 'Введенный параметр не является числом';
             }
         }
-    </script>
+    </script> -->
 
 </body>
-    
+
 </html>
