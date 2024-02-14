@@ -20,21 +20,17 @@ console.log(people.sort(function (a, b) {
 
 // Задание 2
 function isPositive(number) {
-    if (number > 0) {
-        return number;
-    }
+    return number > 0;
 }
 function isMale(obj) {
-    if (obj['gender'] == 'male') {
-        return obj;
-    }
+    return obj['gender'] === 'male';
 }
 function filter(arr, ruleFunction) {
     const output = [];
 
     for (let i = 0; i < arr.length; i++) {
-        if (ruleFunction(arr[i]) != undefined) {
-            output.push(ruleFunction(arr[i]));
+        if (ruleFunction(arr[i])) {
+            output.push(arr[i]);
         }
     }
 
@@ -57,9 +53,7 @@ console.log(filter(people2, isMale));
 // Задание 3
 const timer = (deadline) => {
 
-    let time = deadline;
     const interval = setInterval(() => {
-        time -= 3;
         currentDate = new Date();
         console.log(currentDate);
     }, 3000);
